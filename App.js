@@ -1,21 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import 'react-native-gesture-handler';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import addScreen from './src/addScreen';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import combineReducers from './store/reducers/index';
+import {addAd} from './store/actions/actions';
+import showScreen from './src/helpers/showScreen'
+import deleteScreen from './src/helpers/deleteScreen'
+import RenewAdScreen from './src/helpers/RenewAdScreen'
 
-export default function App() {
+const store = createStore(combineReducers);
+const Tab = createBottomTabNavigator();
+store.dispatch(addAd('Skelbimas','Parduodamas skelbimas',1))
+console.log(store.getState());
+class App extends Component {
+render() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <Provider store={store}>
+      <NavigationContainer>
+      <Tab.Navigator
+      initialRoute="ShowMainInformation"
+      tabBarOptions={{activeTintColor: '#deaf04'}}
+      >
+      <Tab.Screen name="Add" component={addScreen}/>
+      <Tab.Screen name="Show" component={showScreen}/>
+      <Tab.Screen name="Delete" component={deleteScreen}/>
+      <Tab.Screen name="Renew" component={RenewAdScreen}/>
+      </Tab.Navigator>
+    </NavigationContainer>
+    </Provider>
+  )
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

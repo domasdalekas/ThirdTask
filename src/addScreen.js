@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     input: {
       height: 44,
       padding: 7,
-      backgroundColor: '#ededed',
+      backgroundColor: '#1eacb0',
       borderColor: '#ddd',
       borderWidth: 1,
       borderRadius: 10,
@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
       lineHeight: 24,
     },
     addButton: {
-      width: 120,
-      height: 60,
-      backgroundColor: '#6cc900',
+      width: 200,
+      height: 100,
+      backgroundColor: '#1eacb0',
       marginLeft: 10,
       justifyContent: 'center',
       alignItems: 'center',

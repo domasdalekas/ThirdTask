@@ -49,13 +49,15 @@ render() {
                           onChangeText={(text) => this.textChange(text)}
                         />
                         </View>
-                        <View style={styles.deleteButton}>
-                            <TouchableOpacity onPress={()=>this.props.editAD(this.state.name,this.state.text,ad.id)}>
-                                <View style={styles.addButtonContainer}>
-                                    <Text style={styles.addButton}>
-                                    Edit
-                                    </Text>
-                                </View>
+                        <View style={styles.addButtonContainer}>
+                            <TouchableOpacity onPress={()=>this.props.editAD(this.state.name,this.state.text,ad.id)}
+                            style={styles.addButton}
+                            >
+                            <View style={styles.addButton}>
+                            <Text style={styles.addButtonText}>
+                             EDIT
+                            </Text>
+                            </View>
                             </TouchableOpacity>
                         </View>
                       
@@ -71,20 +73,20 @@ const styles = StyleSheet.create({
       flex: 2,
     },
     inputContainer: {
-      backgroundColor: '#ffffff',
-      borderTopColor: '#ededed',
+      backgroundColor: '#1eacb0',
+      borderTopColor: '#1eacb0',
       borderTopWidth: 1,
       flexDirection: 'row',
-      height: 40,
-      width: 60,
+      height: 100,
+      width: 200,
     },
     inputWrapper: {
       flex: 2,
     },
     input: {
-      height: 44,
+      height: 80,
       padding: 7,
-      backgroundColor: '#ededed',
+      backgroundColor: '#1eacb0',
       borderColor: '#ddd',
       borderWidth: 1,
       borderRadius: 10,
@@ -96,9 +98,9 @@ const styles = StyleSheet.create({
       lineHeight: 24,
     },
     addButton: {
-      width: 120,
-      height: 60,
-      backgroundColor: '#6cc900',
+      width: 200,
+      height: 100,
+      backgroundColor: '#1eacb0',
       marginLeft: 10,
       justifyContent: 'center',
       alignItems: 'center',

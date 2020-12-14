@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="404bed96-8aac-4b40-9e4e-201e0d760e8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/addScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/RenewAdScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/RenewAdScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/deleteScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/deleteScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/showScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/showScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +45,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="102" width="1062" height="839" key="AVDManager" timestamp="1606117962397">
+    <state x="760" y="102" width="1062" height="839" key="AVDManager" timestamp="1606302630241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="760" y="102" width="1062" height="839" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1606117962397" />
+    <state x="760" y="102" width="1062" height="839" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1606302630241" />
+    <state x="792" y="166" key="SettingsEditor" timestamp="1606288235007">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="792" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606288235007" />
   </component>
 </project>

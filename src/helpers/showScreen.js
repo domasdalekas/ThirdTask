@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     ads: {
       padding: 20,
-      backgroundColor: '#ededed',
+      backgroundColor: '#1eacb0',
       borderColor: '#ddd',
       borderWidth: 1,
       borderRadius: 10,

@@ -62,9 +62,12 @@ class deleteScreen extends Component{
                         </View>
                     ))}
                </Animated.ScrollView>
-               <Button title="Refresh" onPress={()=>this.animate()}>                
+               
+               <Button title="Refresh" onPress={()=>this.animate()}
+                >
                 </Button>
-            </View>
+                </View>
+            
         )
     }
 }
@@ -84,6 +87,7 @@ const styles = StyleSheet.create({
       addButton: {
         fontSize: 24,
         lineHeight: 24,
+        backgroundColor:"#1eacb0",
       },
     adsContainer: {
       borderTopWidth: 3,
@@ -93,7 +97,7 @@ const styles = StyleSheet.create({
     addButtonContainer: {
         width: 100,
         height: 50,
-        backgroundColor: 'tomato',
+        backgroundColor: '#1eacb0',
         marginLeft: 10,
         justifyContent: 'center',
         alignItems: 'center',
